@@ -1,0 +1,3 @@
+[submodule "JSON-comments-js"]
+	path = JSON-comments-js
+	url = https://github.com/noway421/JSON-comments-js.git
