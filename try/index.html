@@ -13,6 +13,11 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <style type="text/css">
+      td {
+        vertical-align: middle;
+      }
+    </style>
 
     <title>Json-comments by noway421</title>
   </head>
@@ -31,11 +36,11 @@
         <section id="main-content">
           <table>
             <tr>
-              <td colspan="2">From JSON-Comments to JSON</td>
+              <td colspan="3">From JSON-Comments to JSON</td>
             </tr>
             <tr>
               <td>
-                <textarea id="source-1" rows="15" cols="50">{
+                <textarea id="source-1" rows="15" cols="40">{
     "key": "value"
     /*
         Some
@@ -54,26 +59,27 @@
                 <button id="submit-1">&rarr;</button>
               </td>
               <td>
-                <textarea id="result-1" rows="15" cols="50"></textarea>
+                <textarea id="result-1" rows="15" cols="40"></textarea>
               </td>
             </tr>
             <tr>
-              <td colspan="2">From JSON to JSON-Comments</td>
+              <td colspan="3">From JSON to JSON-Comments</td>
             </tr>
             <tr>
               <td>
-                <textarea id="source-2" rows="15" cols="50"></textarea>
+                <textarea id="source-2" rows="15" cols="40"></textarea>
               </td>
               <td>
                 <button id="submit-2">&rarr;</button>
               </td>
               <td>
-                <textarea id="result-2" rows="15" cols="50"></textarea>
+                <textarea id="result-2" rows="15" cols="40"></textarea>
               </td>
             </tr>
           </table>
 
 
+          <p><a href="../">go back</a></p>
 
           <script type="text/javascript">
           document.getElementById('submit-1').onclick = function () {
@@ -101,7 +107,6 @@
             document.getElementById('result-2').value = JSONcomments.stringify(json, null, 4);
           };
           </script>
-
         </section>
 
         <aside id="sidebar">
